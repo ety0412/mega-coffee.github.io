@@ -1,3 +1,8 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
 .wrap {
     width: 1280px;
     margin: 0 auto;
@@ -63,12 +68,28 @@
 
 .animation-container {
     width: 100%;
-    height: 900px;
+    height: 938px;
 }
 
 .slide-image-1 {
     background-image: url("/images/slide1.jpg");
-    background-position: center center;
     background-size: cover;
-    height:100%;
+    height: 100%;
+}
+
+#contents {
+    width:100%;
+}
+
+.swiper-container {
+    width:100%;
+    height:100vh;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
 }

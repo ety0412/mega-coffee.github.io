@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MEGACOFFEE</title>
     <link rel="stylesheet" href="style/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
@@ -45,9 +49,38 @@
         </div>
       </div>
     </header>
-    <div class="animation-container">
-      <div class="slide-image-1"></div>
-      asdasdasdasdasdasdsa
+    <div id="contents">
+      <div class="swiper-container scroll-page">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <!-- 지구인들아 힘내!를 만드세요 -->
+          </div>
+          <div class="swiper-slide">
+            <!-- 메가커피의 신메뉴를 만나보세요 -->
+          </div>
+          <div class="swiper-slide">
+            <!-- 메가커피의 거품없는 창업비용 -->
+          </div>
+          <div class="swiper-slide">
+            <!-- 메가커피 이야기 -->
+          </div>
+          <div class="swiper-slide">
+            <!-- 메가커피 이벤트 -->
+          </div>
+          <div class="swiper-slide">
+            <!-- 푸터 넣으세요 -->
+          </div>
+        </div>
+      </div>
     </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".scroll-page", {
+        direction: "vertical",
+        mousewheel: true,
+        speed: 1000,
+      });
+    </script>
   </body>
 </html>
