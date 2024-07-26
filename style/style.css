@@ -1,139 +1,197 @@
 html {
-    width: 100%;
-    height: 100%;
-
-    
+  width: 100%;
+  height: 100%;
 }
 
-body{
-    -ms-overflow-style: none;
+/* 익스플로러 수직 스크롤바 숨기기 */
+body {
+  -ms-overflow-style: none;
 }
 
+/* 크롬 수직 스크롤바 숨기기 */
 ::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .wrap {
-    width: 1280px;
-    margin: 0 auto;
+  width: 1280px;
+  margin: 0 auto;
 }
 
+/* 헤더 */
 #header {
-    position: fixed;
-    width: 100%;
-    z-index: 999;
-    transition: 0.3s;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  transition: 0.3s;
 }
 
 #header:hover {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 .header-container {
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 105px;
-    /* padding-top: 30px; */
-    
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 105px;
+  gap: 70px;
 }
 
+/* 로고 */
 .logo > img {
-    width: 200px;
+  width: 200px;
 }
 
-#nav-container {
-    display: flex;
-}
-
+/* 내비게이션 */
 .menu {
-    display: flex;
-    gap: 0 50px;
+  display: flex;
+  width: 100%;
 }
 
 .menu > li {
-    position:relative;
-    white-space:nowrap;
-    text-align: center;
+  position: relative;
+  width: calc(100% / 6);
+  text-align: center;
+  padding: 45px 0;
 }
 
 .menu > li > a {
-    font-size: 1.7rem;
-    color: #1c1c1b;
-}
-
-.menu > li > a:hover + .sub-menu::before {
-    transform: translateX(50%) scaleX(1);
-}
-
-.social-menu {
-    display: flex;
-    gap: 0 5px;
-}
-
-.social-menu > li {
-    border: 2px solid #000;
-    border-radius: 50%;
-
-    padding: 3px;
-}
-
-.social-menu > li > a {
-    display: block;
-}
-
-.social-menu > li:hover {
-    background-color: #FDD000;
-    border: 2px solid #FDD000;
+  font-size: 1.7rem;
+  color: #1c1c1b;
 }
 
 .sub-menu {
-    position:absolute;
-    top: 400%;
-    left:50%;
-    transform:translateX(-50%);
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  display: none;
 }
 
-.sub-menu::before {
-    content: "";
-    display:block;
-    height:1px;
-    background-color:#000;
-    transition:all 0.3s;
-    transform:translateX(50%) scaleX(0);
+.sub-menu:before {
+  content: "";
+  position: absolute;
+  left: 25%;
+  top: 0;
+  width: 50%;
+  height: 1px;
+  background-color: #000;
+  transition: 0.3s;
+  transform: scaleX(0);
+}
+
+.sub-menu > li {
+  display: block;
+  line-height: 100%;
 }
 
 .sub-menu > li > a {
-    font-size: 1.7rem;
-    color: #1c1c1b;
+  font-size: 1.7rem;
+  color: #1c1c1b;
 }
 
-.animation-container {
-    width: 100%;
-    height: 938px;
+/* 내비게이션 이벤트 */
+.menu > li:hover > .sub-menu:before {
+  transform: scaleX(1);
+}
+
+/* 소셜 메뉴 */
+.social-menu {
+  display: flex;
+  gap: 0 5px;
+}
+
+.social-menu > li {
+  border: 2px solid #000;
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.social-menu > li > a {
+  display: block;
+}
+
+/* 소셜 메뉴 이벤트 */
+.social-menu > li:hover {
+  background-color: #fdd000;
+  border: 2px solid #fdd000;
 }
 
 .slide-image-1 {
-    background-image: url("/images/slide1.jpg");
-    background-position: center center;
-    background-size: cover;
-    height: 100%;
+  background-image: url("/images/slide1.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
 }
 
 #contents {
-    width:100%;
+  width: 100%;
 }
 
 .swiper-container {
-    width:100%;
-    height:100vh;
+  width: 100%;
+  height: 100vh;
 }
 
 .swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 18px;
+  height: 100vh;
 }
 
+/* 신메뉴를 만나보세요 */
+.slide-image-2 > .wrap {
+  height: 100vh;
+  position: relative;
+}
+
+.season-menu-container {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.season-menu {
+  width: 50%;
+}
+
+.season-menu > h2 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 6.5rem;
+}
+
+.season-menu > h2:before {
+  content: "";
+  width: 100%;
+  height: 30px;
+  background-color: #fdd000;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.season-menu > h3 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+}
+
+.season-menu > p {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  line-height: 25px;
+  font-weight: lighter;
+}
+
+.season-menu-slide {
+  width: 420px;
+}
+
+.season-menu-slide > img {
+  max-width: 100%;
+}
