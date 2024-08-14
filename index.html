@@ -236,8 +236,8 @@
                 </div>
                 <div class="mega-coffee-video">
                   <iframe
-                    width="90%"
-                    height="320"
+                    width="100"
+                    height="350"
                     src="https://www.youtube.com/embed/oW5heyorVvw"
                     title="[ 메가커피 VLOG ] 여행자의 여름은 MEGA가 책임진다/ 원신과 함께하는/ 원신 콜라보/ 원신/ 메가커피/ 카페"
                     frameborder="0"
@@ -297,13 +297,14 @@
     <script>
       // 스크롤 페이징 및 스크롤, 페이지화된 인덱스가 0보다 클 경우 메뉴 background 변경
       let header = document.getElementById("header");
+      let logo = document.querySelector(".logo > img");
 
       var swiper = new Swiper(".scroll-page", {
         direction: "vertical",
         slidesPerView: 1,
         spaceBetween: 0,
         mousewheel: true,
-        speed: 800,
+        speed: 700,
         allowTouchMove: false,
         keyboard: {
           enabled: true,
@@ -313,8 +314,11 @@
             if (this.realIndex > 0) {
               header.style.backgroundColor = "white";
               header.style.boxShadow = "0px 0px 5px 0px rgba(0,0,0,0.1)";
+              // logo.src = "images/logo.png";
+              logo.setAttribute("src", "images/logo.png");
             } else {
               header.removeAttribute("style");
+              logo.setAttribute("src", "images/logo_b.png");
             }
           },
         },

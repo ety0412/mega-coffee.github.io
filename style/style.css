@@ -331,10 +331,16 @@ span {
 }
 
 .mega-coffee-video {
-  width: 50%;
-  height: 55%;
+  width: 45%;
+  height: initial;
+
+  margin-bottom: 150px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+}
+
+.mega-coffee-video > iframe {
+  width: 100%;
 }
 
 /* 메가커피 스토리 */
