@@ -119,6 +119,10 @@ body {
   border: 2px solid #fdd000;
 }
 
+.slide-image-1 > .wrap {
+  height: 100vh;
+}
+
 .slide-image-1 {
   background-image: url("/images/slide1.jpg");
   background-position: center center;
@@ -142,7 +146,6 @@ body {
 /* 신메뉴를 만나보세요 */
 .slide-image-2 > .wrap {
   height: 100vh;
-  position: relative;
 }
 
 .season-menu-container {
@@ -166,10 +169,10 @@ body {
   font-weight: 600;
 }
 
-.season-menu > h2:before {
+.season-menu > h2::before {
   content: "";
   width: 110%;
-  height: 30px;
+  height: 35px;
   background-color: #fdd000;
   position: absolute;
   left: -5%;
@@ -264,5 +267,170 @@ body {
 
 .slide-image-3 > .wrap {
   height: 100vh;
+}
+
+.mega-franchise-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 80px 0 80px;
+}
+
+.mega-franchise {
+  width: 50%;
+}
+
+.mega-franchise > h3 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.mega-franchise > h2,
+span {
   position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 6.5rem;
+  font-weight: 600;
+}
+
+.mega-franchise span::before {
+  content: "";
+  width: 110%;
+  height: 70px;
+  background-color: #ffffff;
+  position: absolute;
+  left: -5%;
+  top: 5px;
+  z-index: -1;
+}
+
+.mega-franchise h3:nth-child(3) {
+  font-size: 4.4rem;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+
+.mega-franchise > p {
+  font-size: 2rem;
+  font-weight: lighter;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.mega-franchise > p:nth-child(5) {
+  font-weight: 300;
+}
+
+.mega-coffee-video {
+  width: 50%;
+  height: 55%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* 메가커피 스토리 */
+.slide-image-4 > .wrap {
+  height: 100vh;
+}
+
+.mega-story-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 80px 0 80px;
+
+  position: relative;
+}
+
+.mega-story {
+  width: 50%;
+}
+
+.mega-story > h3 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.mega-story > h2,
+span {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 6.5rem;
+  font-weight: 600;
+}
+
+.mega-story span::before {
+  content: "";
+  width: 110%;
+  height: 30px;
+  background-color: #fdd000;
+  position: absolute;
+  left: -5%;
+  bottom: 0;
+  z-index: -1;
+}
+
+.mega-story h3:nth-child(3) {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+
+.mega-story > p {
+  font-size: 2rem;
+  font-weight: lighter;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.mega-story > p:nth-child(4) {
+  font-weight: 300;
+}
+
+.mega-background-container {
+  width: 50%;
+
+  padding-left: 30px;
+}
+
+.mega-background {
+  position: absolute;
+  width: 100%;
+  background-image: url(/images/main_mega.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+  top: 0;
+}
+
+.mega-story-container .brand-intro {
+  display: inline-block;
+  padding: 20px;
+  background-color: #fdd000;
+  font-size: 2rem;
+  transition: 200ms;
+}
+
+.mega-story-container .inquiry {
+  display: inline-block;
+  padding: 20px;
+  background-color: #fdd000;
+  font-size: 2rem;
+  transition: 200ms;
+
+  margin-left: 20px;
+}
+
+.mega-story-container .brand-intro:hover,
+.inquiry:hover {
+  transform: translateY(-5px);
+  background-color: #fdd666;
 }
