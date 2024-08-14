@@ -95,7 +95,7 @@
       </div>
     </header>
     <div id="contents">
-      <div class="swiper-container scroll-page">
+      <div class="swiper scroll-page">
         <div class="swiper-wrapper">
           <!-- 지구인들아 힘내! -->
           <div class="swiper-slide slide-image-1"></div>
@@ -288,30 +288,48 @@
             <!-- 푸터 -->
           </div>
         </div>
+        <div class="swiper-pagination"></div>
       </div>
     </div>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
+      // 스크롤 페이징 및 스크롤, 페이지화된 인덱스가 0보다 클 경우 메뉴 background 변경
+      let header = document.getElementById("header");
+
       var swiper = new Swiper(".scroll-page", {
         direction: "vertical",
+        slidesPerView: 1,
+        spaceBetween: 0,
         mousewheel: true,
         speed: 800,
         allowTouchMove: false,
+        keyboard: {
+          enabled: true,
+        },
+        on: {
+          activeIndexChange: function () {
+            if (this.realIndex > 0) {
+              header.style.backgroundColor = "white";
+              header.style.boxShadow = "0px 0px 5px 0px rgba(0,0,0,0.1)";
+            } else {
+              header.removeAttribute("style");
+            }
+          },
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
       });
 
+      // 카드 효과
       var swiper = new Swiper(".season-menu-slide", {
         effect: "cards",
         grabCursor: true,
         autoplay: { delay: 3000 },
       });
-
-      // 스크롤 시 헤더 화이트 변경
-      // let header = document.getElementById("hedaer");
-      // window.addEventListener("scroll", function () {
-      //   header.style.backgroundColor = "white";
-      // });
     </script>
   </body>
 </html>
