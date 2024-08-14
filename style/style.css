@@ -324,6 +324,7 @@ span {
   font-weight: lighter;
   font-weight: 400;
   margin-bottom: 30px;
+  line-height: 30px;
 }
 
 .mega-franchise > p:nth-child(5) {
@@ -334,7 +335,7 @@ span {
   width: 45%;
   height: initial;
 
-  margin-bottom: 150px;
+  margin-bottom: 200px;
   display: flex;
   justify-content: space-between;
 }
@@ -393,6 +394,7 @@ span {
   font-size: 2.4rem;
   font-weight: 600;
   margin-bottom: 60px;
+  line-height: 33px;
 }
 
 .mega-story > p {
@@ -400,6 +402,7 @@ span {
   font-weight: lighter;
   font-weight: 400;
   margin-bottom: 30px;
+  line-height: 30px;
 }
 
 .mega-story > p:nth-child(4) {
