@@ -281,11 +281,68 @@
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
-            <!-- 메가커피 이벤트 -->
+          <!-- 메가커피 이벤트 -->
+          <div class="swiper-slide slide-image-5">
+            <div class="wrap">
+              <div class="mega-event-container">
+                <div class="mega-event">
+                  <div class="sec-title">
+                    <h2>MEGA EVENT</h2>
+                  </div>
+                  <div class="mega-event-image">
+                    <div class="event-item event-item-1">
+                      <img
+                        src="images/20240905182532_1742783615777_e9rINuukNm.jpg"
+                        alt="item1"
+                      />
+                      <div class="item-text">
+                        <h3>[이벤트] 가을시즌 출시기념 이벤트</h3>
+                        <p class="text2"></p>
+                        <p>2024-09-04</p>
+                      </div>
+                    </div>
+                    <div class="event-item event-item-2">
+                      <img
+                        src="images/20240904141614_1742681244265_cLoblVRcNq.png"
+                        alt="item2"
+                      />
+                      <div class="item-text">
+                        <h3>[이벤트] 메가MGC커피 X 우주패스</h3>
+                        <p class="text2"></p>
+                        <p>2024-09-04</p>
+                      </div>
+                    </div>
+                    <div class="event-item event-item-3">
+                      <img
+                        src="images/20240827132209_1741979854364_Jzt7s27i1T.jpg"
+                        alt="item3"
+                      />
+                      <div class="item-text">
+                        <h3>[이벤트] 9월 메가MGC커피 X</h3>
+                        <p class="text2">
+                          *해당 이벤트는 매장 방문결제(키오스크/포스)시에만
+                          적용됩니다.-&gt; 메가오더(APP)/ 배달주문/ 네이버주문등
+                          혜택적용 불가&nbsp;
+                        </p>
+                        <p>2024-08-27</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="event-progress">
+                    <p>
+                      전체 매장 및 각 매장에서 다양한 이벤트가 진행중 입니다.
+                    </p>
+                    <a href="#" class="event-read-more">메뉴 더보기</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="swiper-slide">
-            <!-- 푸터 -->
+          <!-- 푸터 -->
+          <div class="swiper-slide slide-image-6 fp-auto-height">
+            <div class="wrap">
+              <div class="footer-container">ㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇ</div>
+            </div>
           </div>
         </div>
         <div class="swiper-pagination"></div>
@@ -309,6 +366,11 @@
         keyboard: {
           enabled: true,
         },
+        autoplay: false,
+        autoHeight: true,
+        observer: true,
+        observeParents: true,
+
         on: {
           activeIndexChange: function () {
             if (this.realIndex > 0) {
@@ -334,6 +396,23 @@
         grabCursor: true,
         autoplay: { delay: 3000 },
       });
+
+      // 처음 실행됬을때 getheight 실행
+      window.onload = function () {
+        getHeight();
+      };
+
+      // 해상도가 변경되었을때 getHegiht 실행
+      window.addEventListener("resize", function () {
+        getHeight();
+      });
+
+      // 헤더 높이값 구해서 색션에 너비 주는 함수
+      function getHeight() {
+        const header_height = header.offsetHeight;
+        document.querySelector(".mega-event-container").style.paddingTop =
+          header_height + 30 + "px";
+      }
     </script>
   </body>
 </html>
