@@ -1,8 +1,40 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+
+/* 익스플로러 수직 스크롤바 숨기기 */
+/* body {
+  -ms-overflow-style: none;
+} */
+
+/* 크롬 수직 스크롤바 숨기기 */
+/* ::-webkit-scrollbar {
+  display: none;
+} */
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .wrap {
   width: 1280px;
   margin: 0 auto;
 }
 
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+/* 헤더 */
 #header {
   position: fixed;
   width: 100%;
@@ -21,6 +53,7 @@
   padding-top: 30px;
 }
 
+/* 로고 */
 .logo > img {
   width: 200px;
 }
@@ -39,6 +72,43 @@
   color: #1c1c1b;
 }
 
+.sub-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  display: none;
+}
+
+.sub-menu:before {
+  content: "";
+  position: absolute;
+  left: 25%;
+  top: 0;
+  width: 50%;
+  height: 1px;
+  background-color: #000;
+  transition: 0.3s;
+  transform: scaleX(0);
+}
+
+.sub-menu > li {
+  display: block;
+  line-height: 100%;
+}
+
+.sub-menu > li > a {
+  font-size: 1.7rem;
+  color: #1c1c1b;
+}
+
+/* 내비게이션 이벤트 */
+.menu > li:hover > .sub-menu:before {
+  transform: scaleX(1);
+}
+
+/* 소셜 메뉴 */
 .social-menu {
   display: flex;
   gap: 0 5px;
@@ -55,6 +125,7 @@
   display: block;
 }
 
+/* 소셜 메뉴 이벤트 */
 .social-menu > li:hover {
   background-color: #fdd000;
   border: 2px solid #fdd000;

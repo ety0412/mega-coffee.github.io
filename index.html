@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MEGACOFFEE</title>
     <link rel="stylesheet" href="style/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
@@ -14,12 +22,53 @@
           <div class="logo"><img src="images/logo_b.png" alt="logo" /></div>
 
           <ul class="menu">
-            <li><a href="#">메가 스토리</a></li>
-            <li><a href="#">메뉴소개</a></li>
-            <li><a href="#">매장</a></li>
-            <li><a href="#">창업안내</a></li>
-            <li><a href="#">메가소식</a></li>
-            <li><a href="#">채용</a></li>
+            <li>
+              <a href="#">메가 스토리</a>
+              <ul class="sub-menu">
+                <li><a href="#">브랜드</a></li>
+                <li><a href="#">Bi</a></li>
+                <li><a href="#">오시는 길</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">메뉴소개</a>
+              <ul class="sub-menu">
+                <li><a href="#">음료</a></li>
+                <li><a href="#">푸드</a></li>
+                <li><a href="#">상품</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">매장</a>
+              <ul class="sub-menu">
+                <li><a href="#">매장찾기</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">창업안내</a>
+              <ul class="sub-menu">
+                <li><a href="#">개설비용</a></li>
+                <li><a href="#">인테리어</a></li>
+                <li><a href="#">창업문의</a></li>
+                <li><a href="#">가맹점 인수</a></li>
+                <li><a href="#">창업뉴스</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">메가소식</a>
+              <ul class="sub-menu">
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">고객의 소리</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">채용</a>
+              <ul class="sub-menu">
+                <li><a href="#">채용안내</a></li>
+              </ul>
+            </li>
           </ul>
 
           <ul class="social-menu">
@@ -45,9 +94,356 @@
         </div>
       </div>
     </header>
-    <div class="animation-container">
-      <div class="slide-image-1"></div>
-      asdasdasdasdasdasdsa
+    <div id="contents">
+      <div class="swiper scroll-page">
+        <div class="swiper-wrapper">
+          <!-- 지구인들아 힘내! -->
+          <div class="swiper-slide slide-image-1"></div>
+          <!-- 메가커피의 신메뉴를 만나보세요 -->
+          <div class="swiper-slide slide-image-2">
+            <div class="wrap">
+              <div class="season-menu-container">
+                <div class="season-menu">
+                  <h3>YOU CAN DO THIS!</h3>
+                  <h2>지구인들아 힘내!</h2>
+                  <h3>메가MGC커피 여름시즌 2nd 신메뉴</h3>
+                  <p>
+                    무더운 여름 일상에 지친 모든 지구인들이여!<br />
+                    안드로메가급 맛과 비주얼로 쏟아진 여름시즌 신메뉴 라인업!<br />
+                    지금 바로 가까운 메가MGC커피 매장에서 만나보세요!<br />
+                  </p>
+                  <a href="#" class="season-menu-read-more">메뉴 더보기</a>
+                </div>
+                <div class="swiper season-menu-slide">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img
+                        src="images/20240725005257_1721836377500_V9DBic0sPl.jpg"
+                        alt="img1"
+                      />
+                      <div class="season-menu-slide-text">
+                        <h3>방랑자! 하이볼 에이드랑 함 날아?</h3>
+                        <p>Hey Wanderer! Down to Fly with Highball Ade?</p>
+                        <p>
+                          이게 월클이 느끼는 무게의 맛인가.. 자꾸 생각나는
+                          초특급<br />
+                          시원함의 무알콜 하이볼 에이드! 달콜 씁쓸 강렬한
+                          원신...
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <img
+                        src="images/20240725005848_1721836728451_9g4feG5Vei.jpg"
+                        alt="img2"
+                      />
+                      <div class="season-menu-slide-text">
+                        <h3>구름 위 동화 고양이 소다 컵빙수</h3>
+                        <p>with a Fairytale Cat Soda Bingsu</p>
+                        <p>
+                          도도한 동화 고양이와 함 날아? 하늘을 나는 동화
+                          고양이를 만나보고 싶다면 시원 달달한 크림소다맛 원신
+                          한정판 컵...
+                        </p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="images/20240725005702_1721836622860_Wv0OU0pP4D.jpg"
+                        alt="img3"
+                      />
+                      <div class="season-menu-slide-text">
+                        <h3>온 세상이 수메르! 초코젤라또 녹차...</h3>
+                        <p>Sumeru unlocked! Choco-gelato Green Tea Latte</p>
+                        <p>
+                          온 세상이 원신! 지혜의 숲 수메르에서 만나는
+                          녹차라떼!<br />
+                          제주산 고품질 녹차와 달콤쫀득한 초코젤라또, 쌉싸름한
+                          블...
+                        </p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="images/20240610113412_1717986852829_VRrNvdUOeA.jpg"
+                        alt="img4"
+                      />
+                      <div class="season-menu-slide-text">
+                        <h3>오이오이 라임 오히또</h3>
+                        <p>Cucumber-Lime Mojito</p>
+                        <p>
+                          청량한 오이의 향과 상큼한 라임, 애플민트가 어우러진
+                          수분 충전! 대체당을 이용한 저칼로리 여름시즌 한정 메뉴
+                        </p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="images/20240610114625_1717987585951_7MdoU0bevF.jpg"
+                        alt="img5"
+                      />
+                      <div class="season-menu-slide-text">
+                        <h3>수박 쥬스</h3>
+                        <p>Watermelon Juice</p>
+                        <p>
+                          돌아온 여름시즌 베스트셀러! 달달하고 시원한
+                          메가MGC커피 만의 수박주스
+                        </p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="images/20240501232812_1714573692423_O61efAIADP.jpg"
+                        alt="img6"
+                      />
+                      <div class="season-menu-slide-text">
+                        <h3>버터버터 마늘 크로크무슈</h3>
+                        <p>Butter butter garlic Croque Monsieur</p>
+                        <p>
+                          프랑스산 프레지덩 버터로 만든 갈릭베샤멜소스와 햄,
+                          치즈를 샌드하고 바삭한 마늘 크런치를 토핑한 한 끼 든든
+                          샌드위치
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 메가커피의 거품없는 창업비용 -->
+          <div class="swiper-slide slide-image-3">
+            <div class="wrap">
+              <div class="mega-franchise-container">
+                <div class="mega-franchise">
+                  <h3>거품 없는 창업비용</h3>
+                  <h2>
+                    FRANCHISE<br />
+                    MEGA MGC<br />
+                    <span>COFFEE</span>
+                    <br />
+                  </h2>
+                  <h3>5,817만원</h3>
+                  <p>
+                    지금, 메가MGC커피에서<br />
+                    창업성공 스토리를 경험해보세요.<br />
+                  </p>
+                  <p>
+                    합리적인 창업비용과 다양한 경험을 바탕으로,<br />
+                    다양한 노하우를 전수하여 창업 성공을 약속드립니다.<br />
+                  </p>
+                </div>
+                <div class="mega-coffee-video">
+                  <iframe
+                    width="300"
+                    height="350"
+                    src="https://www.youtube.com/embed/oW5heyorVvw?autoplay=1&mute=1&controls=0&loop=1&playlist=oW5heyorVvw"
+                    title="[ 메가커피 VLOG ] 여행자의 여름은 MEGA가 책임진다/ 원신과 함께하는/ 원신 콜라보/ 원신/ 메가커피/ 카페"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 메가커피 이야기 -->
+          <div class="swiper-slide slide-image-4">
+            <div class="wrap">
+              <div class="mega-story-container">
+                <div class="mega-story">
+                  <h3>메가MGC커피 이야기</h3>
+                  <h2>
+                    MEGA SIZE
+                    <br />
+                    MEGA MGC<br />
+                    <span>& 2 SHOT</span>
+                    <br />
+                  </h2>
+                  <h3>
+                    100% 프리미엄 아라비카 원두를 로스팅하여,<br />
+                    깊고 부드러운 커피와 빅 사이즈로 구성된<br />
+                    다양한 음료를 합리적인 가격으로 제공합니다.
+                  </h3>
+                  <p>
+                    좋은 품질의 재료를, 합리적인 가격으로 제공하여<br />
+                    좋은 품질의 음료를 저렴한 가격으로 만나보실 수 있습니다.
+                    <br />
+                  </p>
+                  <a href="#" class="brand-intro">브랜드소개</a>
+                  <a href="#" class="inquiry">창업문의</a>
+                </div>
+                <div class="mega-background-container">
+                  <div class="mega-background"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 메가커피 이벤트 -->
+          <div class="swiper-slide slide-image-5">
+            <div class="wrap">
+              <div class="mega-event-container">
+                <div class="mega-event">
+                  <div class="sec-title">
+                    <h2>MEGA EVENT</h2>
+                  </div>
+                  <div class="mega-event-image">
+                    <div class="event-item event-item-1">
+                      <img
+                        src="images/20240905182532_1742783615777_e9rINuukNm.jpg"
+                        alt="item1"
+                      />
+                      <div class="item-text">
+                        <h3>[이벤트] 가을시즌 출시기념 이벤트</h3>
+                        <p class="text2"></p>
+                        <p>2024-09-04</p>
+                      </div>
+                    </div>
+                    <div class="event-item event-item-2">
+                      <img
+                        src="images/20240904141614_1742681244265_cLoblVRcNq.png"
+                        alt="item2"
+                      />
+                      <div class="item-text">
+                        <h3>[이벤트] 메가MGC커피 X 우주패스</h3>
+                        <p class="text2"></p>
+                        <p>2024-09-04</p>
+                      </div>
+                    </div>
+                    <div class="event-item event-item-3">
+                      <img
+                        src="images/20240827132209_1741979854364_Jzt7s27i1T.jpg"
+                        alt="item3"
+                      />
+                      <div class="item-text">
+                        <h3>[이벤트] 9월 메가MGC커피 X</h3>
+                        <p class="text2">
+                          *해당 이벤트는 매장 방문결제(키오스크/포스)시에만
+                          적용됩니다.-&gt; 메가오더(APP)/ 배달주문/ 네이버주문등
+                          혜택적용 불가&nbsp;
+                        </p>
+                        <p>2024-08-27</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="event-progress">
+                    <p>
+                      전체 매장 및 각 매장에서 다양한 이벤트가 진행중 입니다.
+                    </p>
+                    <a href="#" class="event-read-more">메뉴 더보기</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 푸터 -->
+          <div class="swiper-slide slide-image-6">
+            <div class="wrap">
+              <div class="footer-container">
+                <p>ㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇ</p>
+                <p>ㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇ</p>
+                <p>ㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇ</p>
+                <p>ㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇ</p>
+                <p>ㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇ</p>
+                <p>ㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇ</p>
+                <p>ㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇ</p>
+                <p>ㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇ</p>
+                <p>ㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇ</p>
+                <p>ㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇ</p>
+                <p>ㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇ</p>
+                <p>ㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇ</p>
+                <p>ㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇ</p>
+                <p>ㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇ</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
     </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      // 스크롤 페이징 및 스크롤, 페이지화된 인덱스가 0보다 클 경우 메뉴 background 변경
+      let header = document.getElementById("header");
+      let logo = document.querySelector(".logo > img");
+
+      var swiper = new Swiper(".scroll-page", {
+        direction: "vertical",
+        slidesPerView: "auto", // 화면에 표시 할 슬라이드 auto로 설정 후 footer height 해결
+        spaceBetween: 0,
+        mousewheel: true,
+        speed: 700,
+        allowTouchMove: false,
+        autoHeight: true,
+
+        keyboard: {
+          enabled: true,
+        },
+        autoplay: false,
+        observer: true,
+        observeParents: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        on: {
+          activeIndexChange: function () {
+            if (this.realIndex > 0) {
+              header.style.backgroundColor = "white";
+              header.style.boxShadow = "0px 0px 5px 0px rgba(0,0,0,0.1)";
+              // logo.src = "images/logo.png";
+              logo.setAttribute("src", "images/logo.png");
+            } else {
+              header.removeAttribute("style");
+              logo.setAttribute("src", "images/logo_b.png");
+            }
+          },
+          // transitionEnd: function (swiper) {
+          //   const { wrapperEl, activeIndex, slides } = swiper;
+
+          //   const newHeight = slides[activeIndex].scrollHeight;
+          //   swiper.$wrapperEl.css("height", `${newHeight}px`);
+          //   swiper.update();
+          // },
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+
+      // 카드 효과
+      var swiper = new Swiper(".season-menu-slide", {
+        effect: "cards",
+        grabCursor: true,
+        autoplay: { delay: 3000 },
+      });
+
+      // 처음 실행됬을때 getheight 실행
+      window.onload = function () {
+        getHeight();
+      };
+
+      // 해상도가 변경되었을때 getHegiht 실행
+      window.addEventListener("resize", function () {
+        getHeight();
+      });
+
+      // 헤더 높이값 구해서 색션에 너비 주는 함수
+      function getHeight() {
+        const header_height = header.offsetHeight;
+        document.querySelector(".mega-event-container").style.paddingTop =
+          header_height + "px";
+      }
+    </script>
   </body>
 </html>
