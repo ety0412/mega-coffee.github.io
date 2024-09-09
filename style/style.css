@@ -31,7 +31,7 @@ body {
 
 .swiper {
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
 /* 헤더 */
@@ -135,19 +135,16 @@ body {
   border: 2px solid #fdd000;
 }
 
-.slide-image-1 > .wrap {
-  height: 100vh;
-}
-
 .slide-image-1 {
   background-image: url("/images/slide1.jpg");
   background-position: center center;
   background-size: cover;
-  height: 100%;
+  height: 100vh !important;
 }
 
 #contents {
   width: 100%;
+  height: 100%;
 }
 
 .swiper.scroll-page {
@@ -457,6 +454,9 @@ span {
 .mega-event-container {
   width: 100%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .mega-event .sec-title {
@@ -571,6 +571,5 @@ span {
   background-color: #fdd000;
 }
 
-.slide-image-6 > .wrap {
-  height: 100vh;
+.slide-image-6 .footer-container {
 }

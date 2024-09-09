@@ -339,14 +339,29 @@
             </div>
           </div>
           <!-- 푸터 -->
-          <div class="swiper-slide slide-image-6 fp-auto-height">
+          <div class="swiper-slide slide-image-6">
             <div class="wrap">
-              <div class="footer-container">ㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇ</div>
+              <div class="footer-container">
+                <p>ㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇ</p>
+                <p>ㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇ</p>
+                <p>ㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇ</p>
+                <p>ㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇ</p>
+                <p>ㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇ</p>
+                <p>ㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇ</p>
+                <p>ㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇ</p>
+                <p>ㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇ</p>
+                <p>ㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇ</p>
+                <p>ㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇ</p>
+                <p>ㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇ</p>
+                <p>ㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇ</p>
+                <p>ㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇ</p>
+                <p>ㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇ</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="swiper-pagination"></div>
       </div>
+      <div class="swiper-pagination"></div>
     </div>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -358,18 +373,27 @@
 
       var swiper = new Swiper(".scroll-page", {
         direction: "vertical",
-        slidesPerView: 1,
+        slidesPerView: "auto", // 화면에 표시 할 슬라이드 auto로 설정 후 footer height 해결
         spaceBetween: 0,
         mousewheel: true,
         speed: 700,
         allowTouchMove: false,
+        autoHeight: true,
+
         keyboard: {
           enabled: true,
         },
         autoplay: false,
-        autoHeight: true,
         observer: true,
         observeParents: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
 
         on: {
           activeIndexChange: function () {
@@ -383,6 +407,13 @@
               logo.setAttribute("src", "images/logo_b.png");
             }
           },
+          // transitionEnd: function (swiper) {
+          //   const { wrapperEl, activeIndex, slides } = swiper;
+
+          //   const newHeight = slides[activeIndex].scrollHeight;
+          //   swiper.$wrapperEl.css("height", `${newHeight}px`);
+          //   swiper.update();
+          // },
         },
         pagination: {
           el: ".swiper-pagination",
@@ -411,7 +442,7 @@
       function getHeight() {
         const header_height = header.offsetHeight;
         document.querySelector(".mega-event-container").style.paddingTop =
-          header_height + 30 + "px";
+          header_height + "px";
       }
     </script>
   </body>
