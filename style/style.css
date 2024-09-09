@@ -1,74 +1,73 @@
 .wrap {
-    width: 1280px;
-    margin: 0 auto;
+  width: 1280px;
+  margin: 0 auto;
 }
 
 #header {
-    position: fixed;
-    width: 100%;
-    min-height: 105px;
+  position: fixed;
+  width: 100%;
+  min-height: 105px;
 }
 
 #header:hover {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 .header-container {
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-    padding-top: 30px;
+  padding-top: 30px;
 }
 
 .logo > img {
-    width: 200px;
+  width: 200px;
 }
 
 #nav-container {
-    display: flex;
-    
+  display: flex;
 }
 
 .menu {
-    display: flex;
-    gap: 0 50px;
+  display: flex;
+  gap: 0 50px;
 }
 
 .menu > li > a {
-    font-size: 1.7rem;
-    color: #1c1c1b;
+  font-size: 1.7rem;
+  color: #1c1c1b;
 }
 
 .social-menu {
-    display: flex;
-    gap: 0 5px;
+  display: flex;
+  gap: 0 5px;
 }
 
 .social-menu > li {
-    border: 2px solid #000;
-    border-radius: 50%;
+  border: 2px solid #000;
+  border-radius: 50%;
 
-    padding: 3px;
+  padding: 3px;
 }
 
 .social-menu > li > a {
-    display: block;
+  display: block;
 }
 
 .social-menu > li:hover {
-    background-color: #FDD000;
-    border: 2px solid #FDD000;
+  background-color: #fdd000;
+  border: 2px solid #fdd000;
 }
 
 .animation-container {
-    width: 100%;
-    height: 900px;
+  width: 100%;
+  height: 900px;
 }
 
 .slide-image-1 {
-    background-image: url("/images/slide1.jpg");
-    background-position: center center;
-    background-size: cover;
-    height:100%;
+  background-image: url("/images/slide1.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
 }
