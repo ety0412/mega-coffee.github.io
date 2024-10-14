@@ -123,6 +123,7 @@ body {
   border: 2px solid #000;
   border-radius: 50%;
   padding: 3px;
+  background-color: #fff;
 }
 
 .social-menu > li > a {
@@ -215,6 +216,7 @@ body {
   background-color: #fdd000;
   font-size: 2rem;
   transition: 200ms;
+  color: #1c1c1b;
 }
 
 .season-menu > .season-menu-read-more:hover {
@@ -428,6 +430,7 @@ span {
   background-color: #fdd000;
   font-size: 2rem;
   transition: 200ms;
+  color: #1c1c1b;
 }
 
 .mega-story-container .inquiry {
@@ -436,8 +439,8 @@ span {
   background-color: #fdd000;
   font-size: 2rem;
   transition: 200ms;
-
   margin-left: 20px;
+  color: #1c1c1b;
 }
 
 .mega-story-container .brand-intro:hover,
@@ -499,6 +502,7 @@ span {
   border: 1px solid #ccc;
   border-radius: 20px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .event-item > img {
@@ -559,6 +563,7 @@ span {
   font-size: 2rem;
   transition: 200ms;
   font-weight: 400;
+  color: #1c1c1b;
 }
 
 .event-progress > .event-read-more:hover {
@@ -567,9 +572,104 @@ span {
 }
 
 /* 푸터 */
-.slide-image-6 {
-  background-color: #fdd000;
+.footer-container {
+  width: 100%;
+  height: 100%;
 }
 
-.slide-image-6 .footer-container {
+.yellow-footer-box {
+  width: 100%;
+  background-color: #fdd000;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.yellow-footer-box a {
+  font-size: 1.7rem;
+  color: #1c1c1b;
+  font-weight: 600;
+  margin-right: 20px;
+}
+
+.yellow-footer-box a:hover {
+  text-decoration-line: underline;
+}
+
+.main-footer {
+  display: flex;
+  align-items: center;
+  height: 300px;
+  background-color: #212121;
+}
+
+.footer-text {
+  display: flex;
+}
+
+.left-footer-text {
+  width: 50%;
+  display: flex;
+  color: #aaa;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 30px;
+}
+
+.cont-text {
+  width: 100%;
+  padding-top: 30px;
+}
+
+.cont-text > li {
+  float: left;
+  font-size: 1.7rem;
+  padding-right: 10px;
+  padding-bottom: 20px;
+}
+
+.cont-text > li:first-child {
+  color: #fff;
+}
+
+.left-footer-text > .footer-logo > img {
+  width: 180px;
+}
+
+.right-footer-text {
+  display: flex;
+  width: 50%;
+  justify-content: end;
+}
+
+.cont-list {
+  display: flex;
+  white-space: nowrap;
+}
+
+.cont-list li {
+  font-size: 1.9rem;
+  color: #fff;
+}
+
+.cont-list > li {
+  padding-left: 20px;
+}
+
+.cont-list-list {
+  padding-top: 30px;
+}
+
+.cont-list-list > li {
+  padding-bottom: 10px;
+}
+
+.cont-list-list li > a {
+  font-size: 1.6rem;
+  color: #aaa;
+}
+
+.cont-list-list li > a:hover {
+  color: #fff;
+  text-decoration-line: underline;
 }
