@@ -98,7 +98,20 @@
       <div class="swiper scroll-page">
         <div class="swiper-wrapper">
           <!-- 지구인들아 힘내! -->
-          <div class="swiper-slide slide-image-1"></div>
+          <div class="swiper-slide slide-image-1">
+            <div class="swiper-container main-slide-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide main-slide-1"></div>
+                <div class="swiper-slide main-slide-2"></div>
+                <div class="swiper-slide main-slide-3"></div>
+                <div class="swiper-slide main-slide-4"></div>
+                <div class="swiper-slide main-slide-5"></div>
+                <div class="swiper-slide main-slide-6"></div>
+                <div class="swiper-slide main-slide-7"></div>
+              </div>
+              <div class="swiper-pagination1" style="z-index: 999"></div>
+            </div>
+          </div>
           <!-- 메가커피의 신메뉴를 만나보세요 -->
           <div class="swiper-slide slide-image-2">
             <div class="wrap">
@@ -451,17 +464,30 @@
             </div>
           </div>
         </div>
+        <div class="swiper-pagination"></div>
       </div>
-      <div class="swiper-pagination"></div>
     </div>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
+      // swiper 메인이미지 애니메이션
+      const mySwiper = new Swiper(".main-slide-container", {
+        direction: "horizontal",
+        loop: true,
+        speed: 500,
+        allowTouchMove: true,
+        pagination: {
+          el: ".swiper-pagination1",
+          type: "progressbar",
+        },
+      });
+
       // 스크롤 페이징 및 스크롤, 페이지화된 인덱스가 0보다 클 경우 메뉴 background 변경
       let header = document.getElementById("header");
       let logo = document.querySelector(".logo > img");
 
+      // swiper 스크롤 페이지
       var swiper = new Swiper(".scroll-page", {
         direction: "vertical",
         slidesPerView: "auto", // 화면에 표시 할 슬라이드 auto로 설정 후 footer height 해결
@@ -477,14 +503,6 @@
         autoplay: false,
         observer: true,
         observeParents: true,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
 
         on: {
           activeIndexChange: function () {
@@ -508,6 +526,7 @@
         },
         pagination: {
           el: ".swiper-pagination",
+          type: "bullets",
           clickable: true,
         },
       });
@@ -534,13 +553,6 @@
         const header_height = header.offsetHeight;
         document.querySelector(".mega-event-container").style.paddingTop =
           header_height + "px";
-      }
-
-      var zoomRate = 1;
-      function zoom() {
-        var img = document.querySelector(".event-item");
-        zoomRate = zoomRate + 0.5;
-        img.style.cssText = "transform: scale( " + zoomRate + " );";
       }
     </script>
   </body>
