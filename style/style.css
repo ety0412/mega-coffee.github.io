@@ -137,49 +137,49 @@ body {
 }
 
 .main-slide-1 {
-  background-image: url("/images/slide1.jpg");
+  background-image: url("../images/slide1.jpg");
   background-position: center center;
   background-size: cover;
   height: 100vh !important;
 }
 
 .main-slide-2 {
-  background-image: url("/images/slide2.jpg");
+  background-image: url("../images/slide2.jpg");
   background-position: center center;
   background-size: cover;
   height: 100vh !important;
 }
 
 .main-slide-3 {
-  background-image: url("/images/slide3.jpg");
+  background-image: url("../images/slide3.jpg");
   background-position: center center;
   background-size: cover;
   height: 100vh !important;
 }
 
 .main-slide-4 {
-  background-image: url("/images/slide4.jpg");
+  background-image: url("../images/slide4.jpg");
   background-position: center center;
   background-size: cover;
   height: 100vh !important;
 }
 
 .main-slide-5 {
-  background-image: url("/images/slide5.jpg");
+  background-image: url("../images/slide5.jpg");
   background-position: center center;
   background-size: cover;
   height: 100vh !important;
 }
 
 .main-slide-6 {
-  background-image: url("/images/slide6.jpg");
+  background-image: url("../images/slide6.jpg");
   background-position: center center;
   background-size: cover;
   height: 100vh !important;
 }
 
 .main-slide-7 {
-  background-image: url("/images/slide7.jpg");
+  background-image: url("../images/slide7.jpg");
   background-position: center center;
   background-size: cover;
   height: 100vh !important;
@@ -459,7 +459,7 @@ span {
 .mega-background {
   position: absolute;
   width: 100%;
-  background-image: url(/images/main_mega.jpg);
+  background-image: url(../images/main_mega.jpg);
   background-position: center center;
   background-size: cover;
   height: 100%;
