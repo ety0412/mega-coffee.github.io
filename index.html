@@ -110,6 +110,11 @@
                 <div class="swiper-slide main-slide-7"></div>
               </div>
               <div class="swiper-pagination1" style="z-index: 999"></div>
+
+              <div class="swiper-button-next"></div>
+              <!-- 다음 버튼 (오른쪽에 있는 버튼) -->
+              <div class="swiper-button-prev"></div>
+              <!-- 이전 버튼 -->
             </div>
           </div>
           <!-- 메가커피의 신메뉴를 만나보세요 -->
@@ -480,6 +485,10 @@
         pagination: {
           el: ".swiper-pagination1",
           type: "progressbar",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next", // 다음 버튼 클래스명
+          prevEl: ".swiper-button-prev", // 이번 버튼 클래스명
         },
       });
 

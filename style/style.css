@@ -185,6 +185,14 @@ body {
   height: 100vh !important;
 }
 
+.swiper-button-next {
+  right: 50px;
+}
+
+.swiper-button-prev {
+  left: 50px;
+}
+
 #contents {
   width: 100%;
   height: 100%;
